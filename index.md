@@ -1,10 +1,10 @@
-# WFDB
+# Waveform Database
 
 ![Waveforms](./resources/waveforms.png)
 
 ## About
 
-WFDB is a set of file standards designed for reading and storing physiologic signal data, and associated annotations. See the [WFDB Spec](https://github.com/wfdb/wfdb-spec/) repository for the specification details.
+Waveform Database (WFDB) is a set of file standards designed for reading and storing physiologic signal data, and associated annotations. See the [WFDB Spec](https://github.com/wfdb/wfdb-spec/) repository for the specification details.
 
 Example signal types include [ECG](https://en.wikipedia.org/wiki/Electrocardiography) and [EEG](https://en.wikipedia.org/wiki/Electroencephalography). Example annotation types include automated machine-labelled heart-beats, and clinician comments regarding specific signal artifacts.
 
@@ -12,9 +12,9 @@ There are several available [software packages](#software-packages) that impleme
 
 ## History
 
-The original WFDB Software Package written in C, along with a set of new file specifications, was created by George B. Moody in 1989.
+The original WFDB Software Package, written in C, along with a set of new file specifications, was created by George B. Moody in 1989.
 
-While working at the [Lab for Computational Physiology](https://lcp.mit.edu/) in the Harvard-MIT Division of Health Sciences and Technology, George also created [PhysioNet](http://physionet.org), a platform that hosts many WFDB-related databases, software packages, and resources.
+While working at the [Lab for Computational Physiology](https://lcp.mit.edu/) (LCP) in the Harvard-MIT Division of Health Sciences and Technology, George also created [PhysioNet](http://physionet.org), a platform that hosts many WFDB-related databases, software packages, and resources.
 
 As the preferred programming tools of the scientific industry evolved over time, members of the LCP created more [WFDB software packages](#software-packages) to faciliate more effective research and usage.
 
@@ -52,7 +52,7 @@ PS: If you know of a better format for physiologic wavforms, [tell us](#question
 
 ## About Us
 
-WFDB is under active development (in 2022)! A WFDB working group has been formed to coordinate efforts to make WFDB more useful, popular, and accessible.
+WFDB is under active development! A working group, composed of MIT-LCP members and external collaborators, has been formed to coordinate efforts in making WFDB more useful, popular, and accessible.
 
 Methods include designing better APIS, improving performance, improving documentation, adding new file formats, adding support for more languages, and more.
 
@@ -60,6 +60,6 @@ We strongly encourage the open community to contribute to the software, document
 
 ## Questions and Contact
 
-For questions, comments, and suggestions about the WFDB, and where efforts are being directed, please use the WFDB-Spec repo's [discussions page](https://github.com/wfdb/wfdb-spec/discussions). Tell us what you like, dislike, and how we can make WFDB even better.
+For questions, comments, and suggestions about WFDB, and where efforts are being directed, please use the WFDB-Spec repo's [discussions page](https://github.com/wfdb/wfdb-spec/discussions). Tell us what you like, dislike, and how we can make WFDB better for you.
 
-To receive announcements about WFDB, join announcements [email list](https://groups.google.com/g/wfdb-users/).
+To receive announcements about WFDB, join the announcements [email list](https://groups.google.com/g/wfdb-users/).
