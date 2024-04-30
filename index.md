@@ -48,7 +48,7 @@ Trying to store many hours or days of multi-channel signals recorded at 100+ Hz 
 
 Signal file formats for physiologic waveforms are currently very scattered, and oftenly proprietary, closed-sourced, and application specific for their owning institutions. WFDB will always be open-source and continually developed for the benefit of the wider community. Its usage is not tied to any proprietary or paid software packages, platforms, or vendors.
 
-PS: If you know of a better format for physiologic wavforms, [tell us](#questions-and-contact).
+PS: If you know of a better format for physiologic waveforms, [tell us](#questions-and-contact).
 
 ## About Us
 
