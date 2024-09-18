@@ -4,7 +4,7 @@
 
 ## About
 
-Waveform Database (WFDB) is a set of file standards designed for reading and storing physiologic signal data, and associated annotations. See the [WFDB Spec](https://github.com/wfdb/wfdb-spec/) repository for the specification details.
+Waveform Database (WFDB) is a set of file standards designed for reading and storing physiological signal data, and associated annotations. See the [WFDB Spec](https://github.com/wfdb/wfdb-spec/) repository for the specification details.
 
 Example signal types include [ECG](https://en.wikipedia.org/wiki/Electrocardiography) and [EEG](https://en.wikipedia.org/wiki/Electroencephalography). Example annotation types include automated machine-labelled heart-beats, and clinician comments regarding specific signal artifacts.
 
