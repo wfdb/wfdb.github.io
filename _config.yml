@@ -15,3 +15,6 @@ callouts:
   citation:
     title: Citation
     color: yellow
+
+footer_content: |
+  For more accessibility options, see the <a href="https://accessibility.mit.edu/" target="_blank" rel="noopener">MIT Accessibility Page</a>.
