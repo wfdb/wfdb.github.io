@@ -1,0 +1,31 @@
+# .github/workflows/test-build.yml
+name: Build and Test Jekyll Site
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'  # Match what you are using locally (adjust if needed)
+        bundler-cache: true
+
+    - name: Install dependencies
+      run: bundle install
+
+    - name: Build site
+      run: bundle exec jekyll build --trace
+
+    - name: Test successful build
+      run: test -d _site
