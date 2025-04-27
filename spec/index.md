@@ -9,5 +9,3 @@ has_children: true
 
 An overview of the WFDB signal and annotation file formats.
 
-
-

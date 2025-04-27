@@ -85,5 +85,3 @@ If you use the WFDB Toolbox for MATLAB in your research, please cite:
 
 {: .citation }
 > Silva, I., Moody, B., & Moody, G. (2021). Waveform Database Software Package (WFDB) for MATLAB and Octave (version 0.10.0). PhysioNet. [https://doi.org/10.13026/6zcz-e163](https://doi.org/10.13026/6zcz-e163)
-
----

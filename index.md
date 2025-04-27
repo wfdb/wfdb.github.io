@@ -51,5 +51,3 @@ If you would like to get involved, please [contact us](https://physionet.org/abo
 ## Acknowledgments
 
 The WFDB project builds on decades of work by George B. Moody, Roger G. Mark, and the broader research community.  We thank all contributors who have helped shape and maintain WFDB standards and tools.
-
----

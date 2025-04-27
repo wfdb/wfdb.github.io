@@ -82,6 +82,3 @@ To correctly interpret a WFDB signal file:
 - Read the corresponding **header file** to determine the format.
 - Parse the signal data according to the specified encoding.
 - Apply scaling factors to convert sample values to physical units.
-
----
-
