@@ -1,4 +1,5 @@
 title: WFDB
+repository: wfdb/wfdb.github.io
 theme: just-the-docs
 
 plugins:
