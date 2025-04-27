@@ -53,5 +53,3 @@ To fully read or analyze a WFDB recording, you need:
 - And optionally, any **annotation files** (e.g., `.atr`).
 
 Each file provides a piece of the complete information needed to reconstruct the signals and their clinical context.
-
----

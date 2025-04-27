@@ -74,6 +74,3 @@ WFDB software can automatically distinguish between MIT and AHA formats when rea
 | AHA format | Legacy support; rarely used except for archival data. |
 
 Annotations are essential for interpreting WFDB signals, supporting applications like heartbeat detection, arrhythmia analysis, and rhythm classification.
-
----
-

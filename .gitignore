@@ -124,3 +124,6 @@ TAGS
 
 # Pycharm / JetBrains / IntelliJ project specific settings folder
 .idea/
+
+# Jekyll build folder
+_site/

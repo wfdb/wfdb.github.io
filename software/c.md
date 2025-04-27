@@ -113,4 +113,3 @@ If you use the WFDB Software Package in your research, please cite:
 {: .citation }
 > Moody, G., Pollard, T., & Moody, B. (2022). WFDB Software Package (version 10.7.0). PhysioNet. [https://doi.org/10.13026/gjvw-1m31](https://doi.org/10.13026/gjvw-1m31)
 
----

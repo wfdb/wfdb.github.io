@@ -74,5 +74,3 @@ This example reads record `100` from the MIT-BIH Arrhythmia Database hosted on P
 ## Citing
 
 If you use the WFDB Python package in your research, please cite the software publication available on [PhysioNet](https://physionet.org/content/wfdb-python/).
-
----

@@ -6,7 +6,7 @@ nav_order: 1
 
 # Waveform Database (WFDB) Project
 
-Welcome to the official website for the **Waveform Database (WFDB)** project.
+Welcome to the website for the **Waveform Database (WFDB)** project.
 
 WFDB defines a set of open standards and software tools for the storage, sharing, and analysis of physiologic signal and annotation data. It has been widely used for decades to support biomedical research, clinical studies, and education.
 
@@ -51,5 +51,3 @@ If you would like to get involved, please [contact us](https://physionet.org/abo
 ## Acknowledgments
 
 The WFDB project builds on decades of work by George B. Moody, Roger G. Mark, and the broader research community.  We thank all contributors who have helped shape and maintain WFDB standards and tools.
-
----

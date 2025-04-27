@@ -88,9 +88,3 @@ Each signal has its own line immediately following the record line (for single-s
 - A header file may describe signals stored in multiple files or multiple signals in a single file.
 - Fields like sampling frequency, counter frequency, and base time/date improve time-aligned analysis but are optional.
 - Multi-segment records use a slightly different structure (described separately).
-
----
-
-[Return to Format Specification Overview](../)
-
-

@@ -7,7 +7,7 @@ has_children: true
 
 # WFDB Software
 
-Official implementations of the WFDB tools and libraries.
+Implementations of the WFDB tools and libraries.
 
 
 
