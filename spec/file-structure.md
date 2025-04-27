@@ -7,7 +7,8 @@ nav_order: 1
 
 # Overview of the WFDB File Structure
 
-A WFDB (Waveform Database) record typically consists of **multiple related files** that together define a physiologic signal recording and its annotations.
+{: .important }
+> A WFDB (Waveform Database) record typically consists of **multiple related files** that together define a physiologic signal recording and its annotations.
 
 The key file types are:
 
@@ -40,6 +41,7 @@ For example, for a record named `100`, the typical files might be:
 ## Multi-Segment Records
 
 Some WFDB records are **multi-segment**. In this case, the main header file references a sequence of segments, each with its own associated files.  
+
 Multi-segment records allow for efficient storage of long recordings and variable signal structures.
 
 ---

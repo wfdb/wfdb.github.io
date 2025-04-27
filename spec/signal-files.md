@@ -7,8 +7,7 @@ nav_order: 3
 
 # WFDB Signal Data Files
 
-WFDB signal files contain the raw waveform data for one or more signals.  
-Each file is typically in a binary format optimized for efficient storage and processing.
+WFDB signal files contain the raw waveform data for one or more signals.  Each file is typically in a binary format optimized for efficient storage and processing.
 
 Signal files are referenced in the corresponding **header file** (`.hea`), which specifies the format used for each signal.
 

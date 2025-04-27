@@ -11,7 +11,7 @@ callouts:
     title: Note
     color: red
   important:
-    title: Note
+    title: 
     color: blue
   citation:
     title: Citation

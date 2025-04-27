@@ -7,7 +7,7 @@ nav_order: 2
 
 # WFDB Header Files
 
-Each WFDB record includes one or more **header file** (`.hea`) that specify the associated signal files and their attributes. Header files are plain ASCII text and are critical for interpreting the associated signal and annotation files.
+Each WFDB record includes one or more **header files** (`.hea`) that specify the associated signal files and their attributes. Header files are plain ASCII text and are critical for interpreting the associated signal and annotation files.
 
 ---
 

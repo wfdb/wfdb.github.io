@@ -7,8 +7,7 @@ nav_order: 4
 
 # WFDB Annotation Files
 
-Annotation files contain **time-stamped event markers** aligned to the signal data.  
-These files provide critical context, such as heartbeat labels, arrhythmias, rhythm changes, and comments.
+Annotation files contain **time-stamped event markers** aligned to the signal data.  These files provide critical context, such as heartbeat labels, arrhythmias, rhythm changes, and comments.
 
 WFDB supports two annotation file formats:
 
@@ -19,16 +18,14 @@ WFDB supports two annotation file formats:
 
 ## MIT Annotation Format
 
-The MIT format is the **standard** for WFDB annotations.  
-It is binary, compact (averaging slightly over two bytes per annotation), and extensible.
+The MIT format is the **standard** for WFDB annotations.  It is binary, compact (averaging slightly over two bytes per annotation), and extensible.
 
 Each annotation in the MIT format consists of:
 
 - A **time difference** (`I`) from the previous annotation, measured in sample intervals.
 - An **annotation type code** (`A`), describing the event.
 
-The first byte of each annotation pair is the **least significant byte**.  
-The six most significant bits across the pair encode the annotation type, and the remaining ten bits encode the time difference.
+The first byte of each annotation pair is the **least significant byte**.  The six most significant bits across the pair encode the annotation type, and the remaining ten bits encode the time difference.
 
 ---
 
