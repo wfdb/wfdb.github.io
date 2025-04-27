@@ -1,1 +1,17 @@
-theme: jekyll-theme-slate
+title: WFDB
+theme: just-the-docs
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+callouts:
+  warning:
+    title: Note
+    color: red
+  important:
+    title: Note
+    color: blue
+  citation:
+    title: Citation
+    color: yellow
