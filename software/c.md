@@ -2,7 +2,7 @@
 layout: default
 title: C Implementation
 parent: WFDB Software
-nav_order: 1
+nav_order: 2
 ---
 
 # WFDB C Software Package

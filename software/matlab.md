@@ -2,7 +2,7 @@
 layout: default
 title: MATLAB Toolbox
 parent: WFDB Software
-nav_order: 2
+nav_order: 3
 ---
 
 # WFDB MATLAB Toolbox
