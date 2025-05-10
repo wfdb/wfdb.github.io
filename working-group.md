@@ -11,6 +11,7 @@ The WFDB project is maintained by the following contributors:
 | Photo | Name | Affiliation |
 |:-----:|:----:|:-----------:|
 | ![Photo](assets/briangow.png) | Brian Gow (Chair) | MIT |
+| ![Photo](assets/bm.svg) | Eric Helfenbein | Philips Healthcare |
 | ![Photo](assets/bm.svg) | Benjamin Moody | MIT |
 | ![Photo](assets/tp.svg) | Tom Pollard | MIT |
 
