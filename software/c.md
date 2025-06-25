@@ -53,7 +53,7 @@ This will build the `libwfdb` library and install over 70 command-line tools.
 
 ## Repository and Contributions
 
-- **Source code**: [MIT-LCP/wfdb-app-toolbox](https://github.com/MIT-LCP/wfdb-app-toolbox)
+- **Source code**: [WFDB](https://github.com/bemoody/wfdb)
 - **Documentation**:
   - [WFDB Programmer's Guide](https://physionet.org/physiotools/wpg/)
   - [WFDB Applications Guide](https://physionet.org/physiotools/wag/)
