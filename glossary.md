@@ -106,6 +106,6 @@ The physical measurement units (e.g., millivolts, mmHg) associated with a signal
 
 ---
 
-This glossary is intended to serve as a quick reference when working with WFDB-formatted data.  
+This site is intended to serve as a quick reference when working with WFDB-formatted data.  
 For full technical specifications, please refer to the [WFDB Programmer's Guide](https://physionet.org/physiotools/wpg/) and [WFDB Applications Guide](https://physionet.org/physiotools/wag/).
 

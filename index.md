@@ -39,6 +39,9 @@ Originally developed at MIT by **George B. Moody** in 1989, WFDB continues to ev
 - [Glossary](glossary)  
   Quick reference for key WFDB terms and concepts.
 
+This site is intended to serve as a quick reference when working with WFDB-formatted data.  
+For full technical specifications, please refer to the [WFDB Programmer's Guide](https://physionet.org/physiotools/wpg/) and [WFDB Applications Guide](https://physionet.org/physiotools/wag/).
+
 ---
 
 ## Get Involved
