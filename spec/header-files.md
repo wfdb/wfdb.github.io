@@ -29,26 +29,40 @@ Detailed documentation on header files can be found at: [https://physionet.org/p
 
 The first non-comment line is the **record line**, which provides metadata about the overall record. It includes:
 
-| Field | Description                                                                |
-|:------|:---------------------------------------------------------------------------|
-| Record name | Identifier for the record (letters, digits, underscores only).             |
-| Number of segments (optional) | If present, appended as `/n`. Indicates a multi-segment record.            |
-| Number of signals | Number of signals described in the header.                                 |
-| Sampling frequency (optional) | Samples per second per signal. Defaults to 250 if omitted.                 |
-| Counter frequency (optional) | Secondary clock frequency, separated from sampling frequency by a `/`.     |
-| Base counter value (optional) | Offset value for counter, enclosed in parentheses.                         |
+| Field | Description |
+|:------|:-----------|
+| Record name | Identifier for the record (letters, digits, underscores only). |
+| Number of segments (optional) | If present, appended as `/n`. Indicates a multi-segment record. |
+| Number of signals | Number of signals described in the header. |
+| Sampling frequency (optional) | Samples per second per signal. Defaults to 250 if omitted. |
+| Counter frequency (optional) | Secondary clock frequency, separated from sampling frequency by a `/`. |
+| Base counter value (optional) | Offset value for counter, enclosed in parentheses. |
 | Number of samples (optional) | Total samples per signal when `samps_per_frame`=1; total frames otherwise. |
-| Base time (optional) | Start time of the recording (`HH:MM:SS`).                                  |
-| Base date (optional) | Start date (`DD/MM/YYYY`).                                                 |
+| Base time (optional) | Start time of the recording (`HH:MM:SS`). |
+| Base date (optional) | Start date (`DD/MM/YYYY`). |
 
-**Example:**
+### Examples
+
+#### Basic header (uniform sampling frequency)(record 100 from the [MIT-BIH database](https://www.physionet.org/content/mitdb)):
+
 ```text
-12345 3 62.5 625 30/01/1989
+100 2 360 650000
+```
+- `100`: Record name (must match the filename prefix).
+- `2`: Number of signals in the record.
+- `360`: Sampling frequency in Hz.
+- `650000`: Total samples for each signal.
+
+#### Multi-frequency header (unique sampling rates per channel):
+
+```text
+12345 3 62.5 625 12:00:00 30/01/1989
 ```
 - `12345`: Record name (must match the filename prefix).
 - `3`: Number of signals in the record.
 - `62.5`: Sampling frequency in Hz.
 - `625`: Total frames for each signal. When `samps_per_frame` =  1 (default), this will be the total samples.
+- `12:00:00`: The time (`base_time`).
 - `30/01/1989`: The date (`base_date`).
 
 ---
@@ -74,7 +88,24 @@ Each signal has its own line immediately following the record line (for single-s
 | Block size (optional) | Number of samples per block (for formats supporting block I/O). |
 | Description (optional) | Free-text description of the signal (e.g., lead name `ECG Lead II`). |
 
-**Example:**
+### Examples
+
+#### Basic header (uniform sampling frequency)(record 100 from the [MIT-BIH database](https://www.physionet.org/content/mitdb)):
+```text
+100.dat 212 200 11 1024 995 -22131 0 MLII
+100.dat 212 200 11 1024 1011 20052 0 V5
+```
+- `100.dat`: Filename of the signal file.
+- `212`: Storage format (12-bit two's complement).
+- `200`: ADC gain (i.e. number of digital values per physical unit). 
+- `11`: ADC resolution (bits).
+- `1024`: ADC zero value.
+- `995`, `1011`: Initial value.
+- `-22131`, `20052`: Checksum (sum of all signal samples modulo 2^16).
+- `0`: Block size.
+- `MLII`, `V5`: Signal labels (e.g., lead names).
+
+#### Multi-frequency header (unique sampling rates per channel):
 ```text
 12345.dat 16x4 200/μV 12 0 0 2178 0 ECG
 12345.dat 16x2 16/mmHg 12 0 0 3497 0 ICP
@@ -105,4 +136,5 @@ Each signal has its own line immediately following the record line (for single-s
 
 - A header file may describe signals stored in multiple files or multiple signals in a single file.
 - Fields like sampling frequency, counter frequency, and base time/date improve time-aligned analysis but are optional.
+- Storage format options and details can be found at: [https://physionet.org/physiotools/wag/signal-5.htm](https://physionet.org/physiotools/wag/signal-5.htm)
 - Multi-segment records use a slightly different structure (described separately).
