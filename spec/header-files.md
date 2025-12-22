@@ -43,27 +43,29 @@ The first non-comment line is the **record line**, which provides metadata about
 
 ### Examples
 
-#### Basic header (uniform sampling frequency)(record 100 from the [MIT-BIH database](https://www.physionet.org/content/mitdb)):
-
+**Basic header (uniform sampling frequency):**
+record 100 from the [MIT-BIH database](https://www.physionet.org/content/mitdb)
 ```text
 100 2 360 650000
 ```
+
 - `100`: Record name (must match the filename prefix).
 - `2`: Number of signals in the record.
 - `360`: Sampling frequency in Hz.
-- `650000`: Total samples for each signal.
+- `650000`: Number of samples for each signal.
 
-#### Multi-frequency header (unique sampling rates per channel):
+**Multi-frequency header (unique sampling rates per channel):**
 
 ```text
 12345 3 62.5 625 12:00:00 30/01/1989
 ```
+
 - `12345`: Record name (must match the filename prefix).
 - `3`: Number of signals in the record.
 - `62.5`: Sampling frequency in Hz.
-- `625`: Total frames for each signal. When `samps_per_frame` =  1 (default), this will be the total samples.
-- `12:00:00`: The time (`base_time`).
-- `30/01/1989`: The date (`base_date`).
+- `625`: Number of samples. For multi-frequency records this is the total frames for each signal.
+- `12:00:00`: Base time.
+- `30/01/1989`: Base date.
 
 ---
 
@@ -90,29 +92,32 @@ Each signal has its own line immediately following the record line (for single-s
 
 ### Examples
 
-#### Basic header (uniform sampling frequency)(record 100 from the [MIT-BIH database](https://www.physionet.org/content/mitdb)):
+**Basic header (uniform sampling frequency):**
+record 100 from the [MIT-BIH database](https://www.physionet.org/content/mitdb)
 ```text
 100.dat 212 200 11 1024 995 -22131 0 MLII
 100.dat 212 200 11 1024 1011 20052 0 V5
 ```
-- `100.dat`: Filename of the signal file.
-- `212`: Storage format (12-bit two's complement).
+
+- `100.dat`: File name of the signal file.
+- `212`: Format samples are stored in (12-bit two's complement).
 - `200`: ADC gain (i.e. number of digital values per physical unit). 
 - `11`: ADC resolution (bits).
 - `1024`: ADC zero value.
 - `995`, `1011`: Initial value.
 - `-22131`, `20052`: Checksum (sum of all signal samples modulo 2^16).
 - `0`: Block size.
-- `MLII`, `V5`: Signal labels (e.g., lead names).
+- `MLII`, `V5`: Description (e.g., signal lead names).
 
-#### Multi-frequency header (unique sampling rates per channel):
+**Multi-frequency header (unique sampling rates per channel):**
 ```text
 12345.dat 16x4 200/μV 12 0 0 2178 0 ECG
 12345.dat 16x2 16/mmHg 12 0 0 3497 0 ICP
 12345.dat 16x1 2500/Ohm 12 0 0 1366 0 RESP
 ```
-- `12345.dat`: Filename of the signal file.
-- `16`: Storage format (16-bit integers).
+
+- `12345.dat`: File name of the signal file.
+- `16`: Format samples are stored in (16-bit integers).
 - `x4`,`x2`,`x1`:  4, 2, and 1 samples per frame, respectively. This indicates that the ECG signal has `157 * 4 = 628` samples while the ICP signal has 314 samples and the RESP signal has 157 samples. 
 - `200/μV`, `16/mmHg`, `2500/Ohm`: ADC gain (i.e., number of digital values per physical unit).
 - `12`: ADC resolution (bits).
@@ -120,7 +125,7 @@ Each signal has its own line immediately following the record line (for single-s
 - `0`: Initial value.
 - `2178 `, `3497`, `1366`: Checksum (sum of all signal samples modulo 2^16).
 - `0`: Block size.
-- `ECG`, `ICP`, `RESP`: Signal labels (e.g., lead names).
+- `ECG`, `ICP`, `RESP`: Description (e.g., signal lead names).
 
 ---
 
