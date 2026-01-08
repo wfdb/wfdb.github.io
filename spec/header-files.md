@@ -118,7 +118,7 @@ record 100 from the [MIT-BIH database](https://www.physionet.org/content/mitdb)
 
 - `12345.dat`: File name of the signal file.
 - `16`: Format samples are stored in (16-bit integers).
-- `x4`,`x2`,`x1`:  4, 2, and 1 samples per frame, respectively. This indicates that the ECG signal has `157 * 4 = 628` samples while the ICP signal has 314 samples and the RESP signal has 157 samples. 
+- `x4`,`x2`,`x1`:  4, 2, and 1 samples per frame, respectively. This indicates that the ECG signal has `625 * 4 = 2500` samples while the ICP signal has 1250 samples and the RESP signal has 625 samples. 
 - `200/μV`, `16/mmHg`, `2500/Ohm`: ADC gain (i.e., number of digital values per physical unit).
 - `12`: ADC resolution (bits).
 - `0`: ADC zero value.
